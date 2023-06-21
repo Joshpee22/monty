@@ -13,7 +13,7 @@ void print_char(stack_t **stack, unsigned int line_number)
 		string_err(11, line_number);
 
 	asci = (*stack)->n;
-	if (asci < 0 || ascii > 127)
+	if (asci < 0 || asci > 127)
 		string_err(10, line_number);
 	printf("%c\n", asci);
 }

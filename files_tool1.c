@@ -30,7 +30,7 @@ void read_file(FILE *fd)
 	char *buffer = NULL;
 	size_t length = 0;
 
-	for (line_num = 1; getline(&buffer, &length, fd) != -1; line_number++)
+	for (line_num = 1; getline(&buffer, &length, fd) != -1; line_num++)
 	{
 		format = parse_line(buffer, line_num, format);
 	}
